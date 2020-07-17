@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+        <style>
+            .container{
+                text-align:center;
+            }
+        </style>
+        <script src="draw.js"></script>
+    </head>
+<body style="font-family: 'Rowdies', cursive;">
+    <div class="container">
+        <div class="alert alert-danger" role="alert">
+            <h1>Draw</h1>
+        </div>
+        <div class="row" id="options">
+            <select id="color-picker">
+                <option value="black" selected>Black</option>         
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="grey">Grey</option>
+            </select>
+            <select id="thickness-picker">
+                <option value=1>1</option>    
+                <option value=2>2</option>
+                <option value=3 selected>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+            </select>
+            <button class="btn btn-danger" id="erase">Erase</button>
+        </div>
+    </div>
+    <svg id="draw">
+    </svg>
+</body>
+</html>
